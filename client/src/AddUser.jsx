@@ -108,7 +108,7 @@ const AddUser = ({ isEdit, editUser, setIsEdit, fetchUser }) => {
     return (
         <div>
             <h2 className="text-center font-bold text-xl p-3">
-                {isEdit ? "Edit User" : "Add User"}
+                {isEdit ? "Edit Friend Details" : "Add Friend"}
             </h2>
             <div className="flex justify-center items-center gap-4 mb-4">
                 {open ? (
@@ -117,15 +117,15 @@ const AddUser = ({ isEdit, editUser, setIsEdit, fetchUser }) => {
                         className="bg-red-500 text-white rounded-md p-2 w-1/3 hover:bg-red-600 transition duration-200 ease-in-out"
                     >
                         {isEdit
-                            ? "I don't want to Edit"
-                            : "I don't want to Add user"}
+                            ? "I don't want to edit friend details"
+                            : "I don't want to add new friend"}
                     </button>
                 ) : (
                     <button
                         onClick={() => setOpen(true)}
                         className="bg-green-500 text-white rounded-md p-2 w-1/3 hover:bg-green-600 transition duration-200 ease-in-out"
                     >
-                        {isEdit ? "Edit User" : "You want to add user?"}
+                        {isEdit ? "You want to edit friend details?" : "You want to add new friend?"}
                     </button>
                 )}
             </div>
@@ -162,7 +162,7 @@ const AddUser = ({ isEdit, editUser, setIsEdit, fetchUser }) => {
                         required
                     />
                     <button className="bg-blue-500 text-white rounded-md p-2 w-1/2 hover:bg-blue-600 transition duration-200 ease-in-out">
-                        {isEdit ? "Update User" : "Add User"}
+                        {isEdit ? "Update friend details" : "Add new friend"}
                     </button>
                 </form>
             )}

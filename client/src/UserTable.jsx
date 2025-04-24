@@ -158,7 +158,7 @@ const UserTable = () => {
                                     colSpan={5}
                                     className="py-4 border border-gray-200 text-center p-4"
                                 >
-                                    No users found
+                                    No friend found
                                 </td>
                             </tr>
                         </tbody>
